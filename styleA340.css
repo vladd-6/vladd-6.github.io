@@ -1,0 +1,19 @@
+*{
+    font-family: trebuchet ms, Helvetica, Arial;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-color: gray;
+    background-image: url(A340-background.jpg);
+    background-size: cover;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 0.5vh;
+    text-align: center;
+}
