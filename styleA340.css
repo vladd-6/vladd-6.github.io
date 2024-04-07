@@ -7,8 +7,6 @@ body {
     padding: 0;
     overflow: auto;
     background-color: gray;
-    background-image: url(A340-background.jpg);
-    background-size: cover;
 }
 
 header{
@@ -16,4 +14,26 @@ header{
     color: white;
     padding: 0.5vh;
     text-align: center;
+}
+
+@media screen and (min-width: 1250px){
+    body{
+        background-image: url(A340-background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width: 1251px){ 
+    body{
+        background-image: url(A340-background-2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    header {
+        font-size: 2vw;
+    }
 }
