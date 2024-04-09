@@ -47,7 +47,8 @@ header{
     gap: 10px;
     border: 5px solid darkslategray;
     padding: 10px;
-    width: 100%;
+    width: calc(100% - 3vw);
+    overflow-x: auto;
 }
 
 .table-cell {
@@ -129,6 +130,9 @@ header{
     }
     article{
         font-weight: bold;
-        font-size: 2.5vw;
+        font-size: calc(1.5vh + 0.5vw);
+    }
+    .table-container{
+        font-size: calc(1.5vh + 0.5vw);
     }
 }
