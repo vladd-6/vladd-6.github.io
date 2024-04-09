@@ -28,7 +28,7 @@ header{
     top: 11vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
+    /* width: 60%; */
     min-height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
@@ -38,7 +38,61 @@ header{
     flex-direction: column;
     z-index: -1;
     padding: 3vw;
-    text-indent: 25px;
+    /* text-indent: 25px; */
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    border: 5px solid darkslategray;
+    padding: 10px;
+    width: 100%;
+}
+
+.table-cell {
+    padding: 5px;
+    border: 3px solid gray;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#table-cell-2{
+    grid-column: 2 / 6;
+}
+
+#table-cell-3{
+    grid-column: 2 / 4;
+}
+
+#table-cell-4{
+    grid-column: 4 / 6;
+}
+
+#table-cell-5{
+    grid-row: 8 / span 2;
+}
+
+#table-cell-6{
+    grid-area: 8 / 2 / span 2 / span 4;
+}
+
+.back-button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer; /* Make it clickable */
+}
+
+.back-button:hover{
+    background-color: #008CBA; /* Lighter shade of blue */
 }
 
 @media screen and (min-width: 1250px){
@@ -46,6 +100,9 @@ header{
         background-image: url(A340-background.jpg);
         background-size: cover;
         background-attachment: fixed;
+    }
+    .info{
+        width: 60%;
     }
     header {
         font-size: 1.2vw;
@@ -63,14 +120,15 @@ header{
         background-attachment: fixed;
     }
     .info {
-        top: 8vh;
+        top: 9vh;
+        width: 75%;
     }
     header {
         font-size: 2.5vw;
-        height: 7vh;
+        height: 8vh;
     }
     article{
         font-weight: bold;
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 }
