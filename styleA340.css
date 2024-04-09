@@ -81,7 +81,7 @@ header{
 }
 
 .back-button {
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -89,11 +89,11 @@ header{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    cursor: pointer; /* Make it clickable */
+    cursor: pointer;
 }
 
 .back-button:hover{
-    background-color: #008CBA; /* Lighter shade of blue */
+    background-color: #008CBA;
 }
 
 @media screen and (min-width: 1250px){
@@ -126,7 +126,7 @@ header{
     }
     header {
         font-size: 2.5vw;
-        height: 8vh;
+        height: calc(8vh + 2vw);
     }
     article{
         font-weight: bold;
