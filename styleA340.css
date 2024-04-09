@@ -13,7 +13,30 @@ header{
     background-color: #333;
     color: white;
     padding: 0.5vh;
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.info {
+    position: absolute;
+    top: 11vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    color: white;
+    flex-direction: column;
+    z-index: -1;
+    padding: 3vw;
+    text-indent: 25px;
 }
 
 @media screen and (min-width: 1250px){
@@ -25,6 +48,10 @@ header{
     header {
         font-size: 1.2vw;
     }
+    article{
+        font-weight: bold;
+        font-size: 1.3vw;
+    }
 }
 
 @media screen and (max-width: 1251px){ 
@@ -33,7 +60,15 @@ header{
         background-size: cover;
         background-attachment: fixed;
     }
+    .info {
+        top: 8vh;
+    }
     header {
         font-size: 2.5vw;
+        height: 7vh;
+    }
+    article{
+        font-weight: bold;
+        font-size: 3.5vw;
     }
 }
