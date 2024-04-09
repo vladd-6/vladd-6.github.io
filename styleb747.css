@@ -30,7 +30,7 @@ header{
     transform: translateX(-50%);
     width: 60%;
     min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content:flex-start;
@@ -43,7 +43,7 @@ header{
 
 @media screen and (min-width: 1250px){
     body{
-        background-image: url(A340-background.jpg);
+        background-image: url(B747-background.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
@@ -58,7 +58,7 @@ header{
 
 @media screen and (max-width: 1251px){ 
     body{
-        background-image: url(A340-background-2.jpg);
+        background-image: url(B747-background-2.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
