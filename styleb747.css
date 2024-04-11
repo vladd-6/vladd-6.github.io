@@ -49,6 +49,7 @@ header{
     padding: 10px;
     width: calc(100% - 3vw);
     overflow-x: auto;
+    text-align: center;
 }
 
 .table-cell {
@@ -76,6 +77,10 @@ header{
     grid-column: 2/8;
 }
 
+#table-cell-6{
+    grid-column: 2/8;
+}
+
 .back-button {
     background-color: #04AA6D;
     border: none;
@@ -96,7 +101,7 @@ header{
 
 @media screen and (min-width: 1250px){
     body{
-        background-image: url(B747-background.jpg);
+        background-image: url(resources/B747-background.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
@@ -114,7 +119,7 @@ header{
 
 @media screen and (max-width: 1251px){ 
     body{
-        background-image: url(B747-background-2.jpg);
+        background-image: url(resources/B747-background-2.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
