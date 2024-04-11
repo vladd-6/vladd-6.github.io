@@ -1,4 +1,4 @@
-*{
+* {
     font-family: trebuchet ms, Helvetica, Arial;
 }
 
@@ -9,7 +9,7 @@ body {
     background-color: gray;
 }
 
-header{
+header {
     position: fixed;
     background-color: #333;
     color: white;
@@ -55,91 +55,124 @@ header{
 .table-cell {
     padding: 5px;
     border: 3px solid gray;
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#table-cell-2{
+#table-cell-2 {
     grid-column: 2 / 6;
 }
 
-#table-cell-3{
+#table-cell-3 {
     grid-column: 2 / 4;
 }
 
-#table-cell-4{
+#table-cell-4 {
     grid-column: 4 / 6;
 }
 
-#table-cell-5{
+#table-cell-5 {
     grid-row: 8 / span 2;
 }
 
-#table-cell-6{
+#table-cell-6 {
     grid-area: 8 / 2 / span 2 / span 4;
 }
 
-#table-cell-8{
+#table-cell-8 {
     grid-column: 2 / 6;
 }
 
-.back-button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+#menu-label {
+    display: block;
     cursor: pointer;
-    transition-duration: 0.3s;
-    transition-timing-function: linear;
+    font-size: inherit;
+    margin-bottom: 10px;
 }
 
-.back-button:hover{
+#menu-checkbox {
+    display: none;
+}
+
+#menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#menu-checkbox:checked~#menu-content {
+    max-height: 200px;
+}
+
+#menu-content a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    padding:  15px;
+}
+
+.back-button:hover {
     background-color: #008CBA;
 }
 
-@media screen and (min-width: 1250px){
-    body{
+article:first-child {
+    text-indent: 25px;
+}
+
+article:nth-child(2) {
+    text-indent: 25px;
+}
+
+@media screen and (min-width: 1250px) {
+    body {
         background-image: url(resources/A340-background.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
-    .info{
+
+    .info {
         width: 60%;
     }
+
     header {
         font-size: 1.2vw;
     }
-    article{
+
+    article {
         font-weight: bold;
         font-size: 1.3vw;
     }
 }
 
-@media screen and (max-width: 1251px){ 
-    body{
+@media screen and (max-width: 1251px) {
+    body {
         background-image: url(resources/A340-background-2.jpg);
         background-size: cover;
         background-attachment: fixed;
     }
+
     .info {
         top: 9vh;
         width: 75%;
     }
+
     header {
         font-size: 2.5vw;
         height: calc(8vh + 2vw);
     }
-    article{
+
+    article {
         font-weight: bold;
         font-size: calc(1.5vh + 0.5vw);
     }
-    .table-container{
+
+    .table-container {
         font-size: calc(1.5vh + 0.5vw);
     }
 }

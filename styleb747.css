@@ -99,6 +99,46 @@ header{
     background-color: #008CBA;
 }
 
+article:first-child{
+    text-indent: 25px;
+}
+
+article:nth-child(2){
+    text-indent: 25px;
+}
+
+#menu-label {
+    display: block;
+    cursor: pointer;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+#menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#menu-checkbox:checked~#menu-content {
+    max-height: 200px;
+}
+
+#menu-content a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    padding:  15px;
+}
+
 @media screen and (min-width: 1250px){
     body{
         background-image: url(resources/B747-background.jpg);
