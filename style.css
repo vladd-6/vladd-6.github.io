@@ -22,8 +22,6 @@ header{
 }
 
 header img{
-    padding: 25px;
-    width: calc(2vh + 0.5vw);
     transform-origin: center; /* Set rotation pivot point */
     animation: rotateNeedle 6s infinite alternate;
 }
@@ -86,6 +84,11 @@ header img{
         width: 30vw; /*20 + 10 */
         padding: 10vh;
     }
+    header img{
+        padding: 25px;
+        margin-left: 5px;
+        width: calc(1.5vh + 1vw);
+    }
 }
 
 @media screen and (max-width: 1100px){ 
@@ -102,5 +105,9 @@ header img{
     .planes img{
         width: 50vw;/*35 + 15 */
         padding: 5vh;
+    }
+    header img{
+        margin-left: 20px;
+        width: calc(1.5vh + 1vw);
     }
 }
