@@ -1,0 +1,4 @@
+[
+    {"name" : "Airbus A340", "image" : "resources/AirbusA340.png", "width" : "427", "height" : "406"},
+    {"name" : "Boeing B747", "image" : "resources/Boeing747.png", "width" : "669", "height" : "789"}
+]
